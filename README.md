@@ -1,14 +1,14 @@
-# 太阳耀斑预报
+# Solar Flare Forecasting
 
-基于深度卷积神经网络的全日面太阳磁场特征建模与耀斑预报。
+Modeling full-disk solar magnetic field features and forecasting solar flares using deep convolutional neural networks.
 
-## 所做工作
+## Work
 
-针对全日面太阳磁场，构建了AlexNet、VGGNet、Inception和ResNet四种深度卷积神经网络，用于实现太阳耀斑预报。
+Four deep convolutional neural network architectures—AlexNet, VGGNet, Inception, and ResNet—were constructed based on full-disk solar magnetograms to enable solar flare forecasting.
 
-## 工作成果
+## Results
 
-利用2020年-2024年的耀斑活动情况对模型进行评估，各个评估指标如下：
+The models were evaluated using flare activity data from 2020 to 2024. The evaluation metrics are summarized below:
 
 | 阈值 | 模型        | TSS               | HSS               | Accuracy          | Precision         | Recall              | FAR               |
 | ---- | ----------- | ----------------- | ----------------- | ----------------- | ----------------- | ------------------- | ----------------- |
@@ -25,6 +25,6 @@
 |      | InceptionV3 | $0.445\pm0.034$   | $0.085\pm0.025$   | $0.655\pm0.103$   | $0.079\pm0.015$   | $0.795\pm0.141$     | $0.921\pm0.015$   |
 |      | ResNet      | $0.455\pm0.033$   | $0.089\pm0.031$   | $0.653\pm0.130$   | $0.081\pm0.019$   | $0.807\pm0.162$     | $0.919\pm0.019$   |
 
-最后，使用了PySide6封装训练好的模型，生成可视化应用，如下图所示：
+Finally, the trained models were packaged into a graphical user interface application using PySide6, as shown in the figure below:
 
 ![4-3](https://github.com/user-attachments/assets/906bed8f-dca3-4c78-90ee-4abf02ee71b7)
